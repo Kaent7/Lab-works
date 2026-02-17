@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAddUPDMD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddUPDMD.Designer.cs">
+      <DependentUpon>FormAddUPDMD.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormShowMot.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,9 @@
     <Compile Include="ModelEF\Table_Motorbike.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAddUPDMD.resx">
+      <DependentUpon>FormAddUPDMD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormShowMot.resx">
       <DependentUpon>FormShowMot.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +87,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\LR_6.ModelEF.Table_Motorbike.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

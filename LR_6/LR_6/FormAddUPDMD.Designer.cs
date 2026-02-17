@@ -43,7 +43,9 @@
             this.textBoxModel = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.comboBoxBrand = new System.Windows.Forms.ComboBox();
+            this.tableMotorbikeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableMotorbikeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonBack
@@ -147,6 +149,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.pictureBox1.Location = new System.Drawing.Point(497, 97);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(291, 158);
@@ -171,10 +174,14 @@
             // 
             this.comboBoxBrand.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxBrand.FormattingEnabled = true;
-            this.comboBoxBrand.Location = new System.Drawing.Point(111, 160);
+            this.comboBoxBrand.Location = new System.Drawing.Point(102, 157);
             this.comboBoxBrand.Name = "comboBoxBrand";
             this.comboBoxBrand.Size = new System.Drawing.Size(380, 28);
             this.comboBoxBrand.TabIndex = 5;
+            // 
+            // tableMotorbikeBindingSource
+            // 
+            this.tableMotorbikeBindingSource.DataSource = typeof(LR_6.ModelEF.Table_Motorbike);
             // 
             // FormAddUPDMD
             // 
@@ -198,6 +205,7 @@
             this.Text = "FormAddUPDMD";
             this.Load += new System.EventHandler(this.FormAddUPDMD_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableMotorbikeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,5 +227,6 @@
         private System.Windows.Forms.TextBox textBoxModel;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ComboBox comboBoxBrand;
+        private System.Windows.Forms.BindingSource tableMotorbikeBindingSource;
     }
 }
