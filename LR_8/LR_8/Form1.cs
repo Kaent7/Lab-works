@@ -81,22 +81,25 @@ namespace LR_8
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            PavilionsChange = pavilions = database.Pavilion.ToList();
+            loadStartData();
+            LoadDataCombo();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            PavilionsChange = pavilions.Where(x => x.Status.Contains(textBox1.Text)).ToList();
+            LoadOrder();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            LoadOrder();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
+            LoadOrder();
         }
     }
 }
